@@ -1,40 +1,53 @@
 <!DOCTYPE html> <!--PARA CRIAR ESSE CABEÇALHO DIGITE HTML E SELECIONE A OPÇÃO HTML:5-->
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stle.css">
     <title>Site aprendizado</title>
 
     <!--O comando <style> significa que abrimos uma tag para usar o HTML-->
     <style>
-        .h1{
-    text-align: center;
-}
+        .h1 {
+            text-align: center;
+        }
 
-p {
-    text-align: center;
-}
+        p {
+            text-align: center;
+        }
 
-body {
-    background-color: black;
-    color: white;
-    font:  normal 15pt Arial;
-}
+        body {
+
+            font: normal 15pt Arial;
+        }
     </style>
 </head>
+
 <body>
     <h1 class="h1">Hello World</h1>
     <hr>
     <p>This is my first website with repository</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro, 
-        expedita exercitationem qui tenetur doloremque atque aspernatur. Iure quo ipsam facere explicabo minus neque,
-         quae fugit, ad quibusdam, quis temporibus.</p>
-<!--O comando <script> usamos para iniciar comando em JavaScript--> 
-         <script>
-               window.alert('Minha primeira mensagem')
-               window.confirm('Está gostando do JavaScript?')
-               window.prompt('Qual é o seu nome?')
-         </script>
+    <p>Aqui é onde fica um texto qualquer que no caso é o lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Expedita nihil soluta nostrum illum ullam delectus aliquam ut perspiciatis, tempora sit facere maiores culpa ea.
+        Doloremque illum asperiores ipsum ab velit.
+
+    </p>
+    <h1>Trabalhando com Dados v2.0</h1>
+         <button onclick="inicio()">Clique para começar</button>
+           <section id="resultado">
+              <p>Aqui vai aparecer o resultado... </p>
+    </section>
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('resultado')
+            // Também funciona com o comando abaixo
+            // let res = window.document.querySelector('section#resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
+        }
+
+
+    </script>
 </body>
+
 </html>
