@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciando estudos com DOm</title>
-    <style>
-        body {
-            background: rgb(6, 188, 243);
-            color: white;
-            font: normal 18pt Arial;
-        }
-    </style>
+    <title>Nomeando</title>
 </head>
 <body>
-    <h1>Iniciando os passos com o DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> pelo <mark>JavaScript</mark></p>
-    <div id="msg">Clique em mim</div>
+    <h1>Aprendendo a usar aqui</h1>
+
+    
+
+    <button onclick="CliqueinoBotao()">Clique aqui</button>
+
+    <section id="res">
+        <p>Aqui vai ficar o resultado</p>
+    </section>
 
     <script>
-       let d = window.document.getElementById('msg');
-       d.style.color = 'green'
+        function CliqueinoBotao() {
+            
+            let nome = window.prompt('Digite o seu nome:')
+            let res = window.document.getElementById('res')
+            res.innerHTML = ` Olá ${nome}! É um prazer em te conhecer :D`
 
-       let s = 'Hello World here'
-       s = s.toUpperCase();
-       window.document.write(s)
+
+
+        }
+
+
+
     </script>
+    
 </body>
-
 </html>
