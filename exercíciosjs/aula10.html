@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: 20pt Arial;
+            background: rgb(3, 243, 43);
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="area" onclick="CliqueiNoBotao()" onmouseenter="entrou()" onmouseout="saiu()">
+          Hello World Verdinho
+    </div>
+
+    <script>
+
+       let area = window.document.getElementById('area')
+
+       function CliqueiNoBotao() {
+        
+         area.innerText = 'Clicou!'
+         area.style.background = 'blue'
+       }
+
+       function entrou() {
+          area.innerText = 'Entrou!'
+          area.style.background = 'yellow'
+          area.style.color = 'black'
+       }
+
+       function saiu() {
+         area.innerText = 'Saiu!'
+         area.style.background = 'red'
+       }
+
+
+    </script>
+</body>
+</html>

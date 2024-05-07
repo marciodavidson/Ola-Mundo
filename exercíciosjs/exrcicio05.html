@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos com DOm</title>
+    <style>
+        body {
+            background: rgb(6, 188, 243);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os passos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> pelo <mark>JavaScript</mark></p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+       let d = window.document.getElementById('msg');
+       d.style.color = 'green'
+
+       let s = 'Hello World here'
+       s = s.toUpperCase();
+       window.document.write(s)
+    </script>
+</body>
+
+</html>
