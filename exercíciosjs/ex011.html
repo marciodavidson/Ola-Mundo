@@ -1,0 +1,44 @@
+<!DOCTYPE html>     <!--Crie uma funcionalidade que diz quantos km percorre e multe se passar de 60km/h-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+
+</head>
+<body>
+    <h2>Procura andar na velocidade correta?</h2>
+    <input type="number" name="velocidade" id="vel">
+    <input type="button" value="velocidade" onclick="botão()">
+
+    <div id="res">
+    </div>
+
+    <script>
+        
+        function botão(){
+            let velo = window.document.querySelector('input#vel')
+            let res = window.document.querySelector('div#res')
+            let vel = Number(velo.value)
+
+            res.innerHTML = `<p>Você está andando a ${vel}km/h</p>`
+            
+            if (vel > 60){
+                    res.innerHTML += `<p>Você está <strong>Multado</strong> por excesso de velocidade</p`
+            }
+
+            res.innerHTML += `<p>Continue ai</p>`
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
