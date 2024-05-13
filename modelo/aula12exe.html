@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo</title>
     <header>
-        <h1>Título</h1>
+        <h1>Hora do Dia</h1>
     </header>
     <style>
         header {
@@ -40,17 +40,19 @@
     </style>
 </head>
 
-<body>
+<body onload="carregar()">
     <section>
-        <div>
+        <div id="msg">
 
-         <p>Testando div 1</p>
+         <p>Aqui vai aparecer a mensagem</p>
 
         </div>
+        
 
-
-        <div>
-
+        <div id="foto">
+           
+            <img id="imagem" src="foto-de-manha.jpg" alt="fotodemanha" height="125px" width="200px">
+            
          <p>Testando div 2</p>
 
         </div>
@@ -59,5 +61,5 @@
 
     <footer><strong>© Márcio Davidson</strong></footer>
 </body>
-
+<script src="./bomdia.js"></script>
 </html>
