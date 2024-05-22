@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super contador</title>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <style>
+        header {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        body {
+            background-color: rgb(0, 67, 250);
+            color: white;
+            font: normal 15pt Arial;
+        }
+
+        section {
+            background: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 400px;
+            width: 500px;
+            color: black;
+            border-radius: 10px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+
+        #inputs {
+            font: 13pt Arial;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="dados">
+         <p>Início: <input type="number" name="inicio" id="txti"></p>
+         <p>Fim: <input type="number" name="fim" id="txtf"></p>
+         <p>Passo: <input type="number" name="passo" id="txtp"></p>
+         <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+        
+
+        <div id="res">
+            
+         <p>Resultado pulando de acordo com o número que você escolher</p>
+
+        </div>
+
+    </section>
+
+    <footer><strong>© Márcio Davidson</strong></footer>
+</body>
+<script src="./contagem.js"></script>
+</html>

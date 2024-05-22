@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <header>
+        <h1>Veficador de Idade</h1>
+    </header>
+    <style>
+        header {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        body {
+            background-color: rgb(0, 67, 250);
+            color: white;
+            font: normal 15pt Arial;
+        }
+
+        section {
+            background: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 450px;
+            width: 500px;
+            color: black;
+            border-radius: 10px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+
+         <p>Ano de Nascimento: </p>
+         <input type="number" name="txtano" id="txtano">
+         <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+
+        </div>
+        
+        <p><input type="button" value="Verificar" onclick="verificar()"></p>
+
+        <div id="res">
+           
+           <p>Preencha os dados acima para ver o resultado!</p>
+            
+        </div>
+
+    </section>
+
+    <footer><strong>© Márcio Davidson</strong></footer>
+</body>
+<script src="./idade.js"></script>
+</html>
