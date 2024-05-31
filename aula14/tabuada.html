@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<style>
+    header {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    body {
+        background-color: rgb(0, 67, 250);
+        color: white;
+        font: normal 15pt Arial;
+    }
+
+    section {
+        background: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 400px;
+        width: 500px;
+        color: black;
+        border-radius: 10px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+        font-style: italic;
+    }
+
+    #inputs {
+        font: 13pt Arial;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #seltab {
+        text-align: left;
+    }
+</style>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <p>Número: <input type="number" name="num" id="txtn">
+              <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>Márcio Davidson</p>
+    </footer>
+
+    <script>
+        function tabuada(){
+            let num = document.getElementById('txtn');
+            let tab = document.getElementById('seltab');
+
+            if(num.value.length == 0) {
+                alert('ERRO! Digite um número');
+            } else {
+                let n = Number(num.value);
+                tab.innerHTML = '';
+                for(let c = 1; c <= 10; c++) {
+                    let item = document.createElement('option');
+                    item.text = `${n} x ${c} = ${n * c}`;
+                    item.value = `tab${c}`;
+                    tab.appendChild(item);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
