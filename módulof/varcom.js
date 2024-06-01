@@ -1,2 +1,6 @@
-let a = [maça, pera]
-console.log([0])
+let a = [
+    'maça', 
+    'pera'
+]
+
+console.log(a[0])
