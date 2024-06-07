@@ -50,7 +50,7 @@ function verificar() {
                 // Jovem
                 imagem.setAttribute('src', 'ajovem.jpg');
                 imagem.setAttribute('width' , '200');
-                imagem.setAttribute('height' , '200')
+                imagem.setAttribute('height' , '200');
             } else if (idade >= 21 && idade < 60) {
                 // Adulta
                 imagem.setAttribute('src', 'adulta.jpg');
